@@ -1,0 +1,79 @@
+[2025-06-18T08:04:35.350] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:04:37.298] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:35:47.233] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:35:49.147] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:44:14.547] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:44:16.468] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:45:05.965] [INFO] default - POST /news
+[2025-06-18T08:45:09.618] [INFO] default - POST /news
+[2025-06-18T08:45:09.795] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "Hoy se esperan lluvias" }
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:518:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:572:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Hoy se esperan lluvias' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2025-06-18T08:45:34.545] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:45:36.407] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:45:58.361] [INFO] default - POST /news
+[2025-06-18T08:46:07.384] [INFO] default - POST /news
+[2025-06-18T08:46:09.334] [INFO] default - POST /news
+[2025-06-18T08:46:09.521] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "Hoy se esperan lluviasasdasdsd" }
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:518:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:572:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'Hoy se esperan lluviasasdasdsd' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2025-06-18T08:47:06.666] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:47:08.550] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:47:30.694] [INFO] default - POST /news
+[2025-06-18T08:47:36.378] [INFO] default - POST /news
+[2025-06-18T08:47:36.555] [FATAL] default - MongoServerError: E11000 duplicate key error collection: news.news index: title_1 dup key: { title: "noticia probando swagger" }
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\operations\insert.js:53:33
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection_pool.js:333:25
+    at D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection.js:243:9)
+    at MessageStream.<anonymous> (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\connection.js:61:60)
+    at MessageStream.emit (node:events:518:28)
+    at processIncomingData (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:125:16)
+    at MessageStream._write (D:\CODERHOUSE\BACKEND\coderhouse-72035-backend-3\08 - DOCUMENTACION\01-app-news\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:572:12) {
+  index: 0,
+  code: 11000,
+  keyPattern: { title: 1 },
+  keyValue: { title: 'noticia probando swagger' },
+  [Symbol(errorLabels)]: Set(0) {}
+}
+[2025-06-18T08:48:47.573] [INFO] default - POST /news
+[2025-06-18T08:51:44.289] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:51:46.183] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:52:06.213] [INFO] default - POST /news
+[2025-06-18T08:54:04.325] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:54:06.251] [INFO] default - Conectado a MongoDB!
+[2025-06-18T08:54:35.075] [INFO] default - GET /news
+[2025-06-18T08:55:18.544] [INFO] default - GET /news
+[2025-06-18T08:56:29.041] [INFO] default - GET /news/64e3ba36b974d10ee720f25a
+[2025-06-18T08:58:14.041] [INFO] default - 🚀 Server started on port http://localhost:8080
+[2025-06-18T08:58:15.987] [INFO] default - Conectado a MongoDB!

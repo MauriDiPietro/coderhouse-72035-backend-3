@@ -1,0 +1,27 @@
+components:
+  parameters:
+    schemas:
+      BodyNoticia:
+        type: object
+        required:
+          - title
+          - body
+          - author
+          - image
+        properties:
+          title:
+            type: string
+            description: Titulo de la noticia
+            example: Hoy se esperan lluvias 
+          body:
+            type: string
+            description: Cuerpo de la noticia
+            example: En el día de hoy se esperan lluvias en la región, con una probabilidad del 80% de precipitación. Las temperaturas oscilarán entre los 15 y 20 grados Celsius. Se recomienda a la población tomar precauciones al salir de casa y estar atentos a las actualizaciones meteorológicas.
+          author:
+            type: string
+            description: Autor de la noticia
+            example: Juan Pérez
+          image:
+            type: string
+            description: URL de la imagen de la noticia  
+            example: https://example.com/image.jpg

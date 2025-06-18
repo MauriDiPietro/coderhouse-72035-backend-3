@@ -1,0 +1,122 @@
+paths:
+  /news:
+    post:
+      tags:
+      - Noticias
+      summary: Crear una noticia
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/BodyNoticia'
+        responses:
+          201:
+            description: Noticia creada exitosamente
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Noticias/RegistroNoticia'      
+          400:
+            description: Error al crear la noticia
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Noticias/ErrorCrearNoticia'
+          500:
+            description: Error interno del servidor
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schema/Noticias/ErrorInterno'
+    get:  
+      tags:
+      - Noticias
+      summary: Obtener todas las noticias
+      responses:
+        200:
+          description: Lista de noticias obtenidas exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ListadoNoticias'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ErrorInterno'
+  /news/{id}:
+    get:
+      tags:
+      - Noticias
+      summary: Obtener una noticia por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: ID de la noticia a obtener
+          schema:
+            type: string
+      responses:
+        200:
+          description: Noticia obtenida exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/RegistroNoticia'
+        404:
+          description: No se encontró la noticia con el ID proporcionado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ErrorObtenerPorId'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ErrorInterno'
+    put:
+      tags:
+      - Noticias
+      summary: Actualizar una noticia por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: ID de la noticia a actualizar
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/schemas/BodyNoticia'
+      responses:
+        200:
+          description: Noticia actualizada exitosamente
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/RegistroNoticia'
+        400:
+          description: Error al actualizar la noticia
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ErrorCrearNoticia'
+        404:
+          description: No se encontró la noticia con el ID proporcionado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ErrorObtenerPorId'
+        500:
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schema/Noticias/ErrorInterno'
+    delete:
